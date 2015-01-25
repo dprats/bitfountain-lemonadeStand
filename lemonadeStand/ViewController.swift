@@ -200,6 +200,16 @@ class ViewController: UIViewController {
                     println("Paid")
                 }
             }
+            
+            //clearing our previous stuff
+            
+            lemonsToPurchase = 0
+            iceCubesToPurchase = 0
+            lemonsToMix = 0
+            iceCubesToMix = 0
+            
+            updateMainView()
+            
         }
         
     }
