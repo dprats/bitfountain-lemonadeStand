@@ -28,6 +28,12 @@ class ViewController: UIViewController {
     var supplies = Supplies(aMoney: 10, aLemons: 1, aIceCubes: 1)
     let price = Price()
     
+    var lemonsToPurchase = 0
+    var iceCubesToPurchase = 0
+    
+    var lemonsToMix = 0
+    var iceCubesToMix  = 0
+    
     
 
     override func viewDidLoad() {
@@ -44,13 +50,8 @@ class ViewController: UIViewController {
     //IBActions
     @IBAction func purchaseLemonButtonPressed(sender: UIButton) {
         
-        if supplies.money < price.lemon {
-            println("cannot add more lemons without money")
-        }
-        else {
-            supplies.lemons += 1
-            supplies.money -= price.lemon
-        }
+     
+        
         
     }
     @IBAction func unpurchaseLemonButtonPressed(sender: UIButton) {
@@ -75,6 +76,36 @@ class ViewController: UIViewController {
     }
     
     
+        //helper functions
+    
+    //function to update all the labels
+    func updateMainView(){
+        
+        moneySupplyCount.text = "$\(supplies.money)"
+        lemonSupplyCount.text = "$\(supplies.lemons)"
+        
+        lemonSupplyCount.text = "\(supplies.lemons) lemons"
+        iceSupplyCount.text = "\(supplies.iceCubes) ice cubes"
+        
+        lemonPurchaseCount.text = "\(lemonsToPurchase)"
+        icePurchaseCount.text = "\(iceCubesToPurchase)"
+        
+        lemonMixCount.text = "\(lemonsToMix)"
+        iceMixCount.text = "\(iceCubesToMix)"
+        
+    }
+    
+    //function to throw up an alert
+    func showAlertWithText(header: String = "Warning", message: String){
+        
+        var alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        //action so the user can dismiss the alert
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
     
     
 
