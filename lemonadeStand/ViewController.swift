@@ -22,7 +22,9 @@ class ViewController: UIViewController {
     
     //todays counts
     @IBOutlet weak var lemonMixCount: UILabel!
-    @IBOutlet weak var iceMixCount: UILabel!
+//    @IBOutlet weak var iceMixCount: UILabel!
+    
+    @IBOutlet weak var iceMixCount2: UILabel!
     
     //instantiating the prices
     var supplies = Supplies(aMoney: 10, aLemons: 1, aIceCubes: 1)
@@ -39,6 +41,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        updateMainView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,7 +94,7 @@ class ViewController: UIViewController {
         icePurchaseCount.text = "\(iceCubesToPurchase)"
         
         lemonMixCount.text = "\(lemonsToMix)"
-        iceMixCount.text = "\(iceCubesToMix)"
+        iceMixCount2.text = "\(iceCubesToMix)"
         
     }
     
