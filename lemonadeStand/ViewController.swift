@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        updateMainView()
+       updateMainView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,15 +53,58 @@ class ViewController: UIViewController {
     //IBActions
     @IBAction func purchaseLemonButtonPressed(sender: UIButton) {
         
+        if supplies.money > price.lemon {
+            lemonsToPurchase += 1
+            supplies.money -= price.lemon
+            supplies.lemons += 1
+            updateMainView()
+        }
+        else {
+            showAlertWithText(message: "You need more money to buy lemons")
+        }
      
-        
+    
         
     }
     @IBAction func unpurchaseLemonButtonPressed(sender: UIButton) {
+        
+        if lemonsToPurchase > 0 {
+            lemonsToPurchase -= 1
+            supplies.money += price.lemon
+            supplies.lemons -= 1
+            updateMainView()
+        }
+        else {
+            showAlertWithText(message: "You dont have anything to return")
+        }
+        
+        
     }
     @IBAction func purchaseIceButtonPressed(sender: UIButton) {
+        
+        if supplies.money > price.iceCube {
+            iceCubesToPurchase += 1
+            supplies.money -= price.iceCube
+            supplies.iceCubes += 1
+            updateMainView()
+        }
+        else {
+            showAlertWithText(header: "Error", message: "You need more money to buy ice")
+        }
+        
+        
     }
     @IBAction func unpurchaseIceButtonPressed(sender: UIButton) {
+        
+        if iceCubesToPurchase > 0 {
+            supplies.money += price.iceCube
+            iceCubesToPurchase -= 1
+            supplies.iceCubes -= 1
+            updateMainView()
+        }
+        else {
+            showAlertWithText(message: "You do not have ice to return")
+        }
     }
     
     @IBAction func mixLemonButtonPressed(sender: UIButton) {
@@ -76,6 +119,41 @@ class ViewController: UIViewController {
     
     
     @IBAction func startDayButtonPressed(sender: UIButton) {
+        
+        //generate customers
+        //figure out what our ratio is
+        //use our customers and preference of our customers and compare against the ratio
+
+        //generate random number 0 through 10
+        let customers = Int(arc4random_uniform(UInt32(11)))
+        println("customers: \(customers)")
+        
+        if lemonsToMix == 0 || iceCubesToMix == 0 {
+            showAlertWithText(message: "You need to add at least one lemon and once ice cube")
+            
+        }
+        else {
+            let lemonadeRatio = Double(lemonsToMix) / Double(iceCubesToMix)
+        
+        
+        //iterate through our customers
+            for x in 0...customers {
+               
+                let preference = Double(arc4random_uniform(UInt32(101)))/100
+                if preference < 0.4 && lemonadeRatio > 1 {
+                    supplies.money += 1
+                    println("Paid")
+                }
+                else if preference > 0.6 && lemonadeRatio < 1 {
+                    supplies.money += 1
+                    println("Paid")
+                } else if preference <= 0.6 && lemonadeRatio == 1 {
+                    supplies.money += 1
+                    println("Paid")
+                }
+            }
+        }
+        
     }
     
     

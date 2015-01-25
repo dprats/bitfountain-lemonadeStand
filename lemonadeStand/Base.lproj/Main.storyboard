@@ -192,7 +192,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="unpurchaseIceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Li-sj-dna"/>
-                                    <action selector="unurchaseIceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qv9-0i-Gt3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6V-Ea-EnE">
