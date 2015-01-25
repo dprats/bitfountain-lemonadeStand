@@ -13,6 +13,8 @@
 		FA3DBCAB1A74571D002B71CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3DBCAA1A74571D002B71CB /* Images.xcassets */; };
 		FA3DBCAE1A74571D002B71CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA3DBCAC1A74571D002B71CB /* LaunchScreen.xib */; };
 		FA3DBCBA1A74571D002B71CB /* lemonadeStandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DBCB91A74571D002B71CB /* lemonadeStandTests.swift */; };
+		FA3DBCC41A747377002B71CB /* Supplies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DBCC31A747377002B71CB /* Supplies.swift */; };
+		FA3DBCC61A74745F002B71CB /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DBCC51A74745F002B71CB /* Price.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		FA3DBCB31A74571D002B71CB /* lemonadeStandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lemonadeStandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3DBCB81A74571D002B71CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3DBCB91A74571D002B71CB /* lemonadeStandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lemonadeStandTests.swift; sourceTree = "<group>"; };
+		FA3DBCC31A747377002B71CB /* Supplies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supplies.swift; sourceTree = "<group>"; };
+		FA3DBCC51A74745F002B71CB /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				FA3DBCA31A74571D002B71CB /* AppDelegate.swift */,
 				FA3DBCA51A74571D002B71CB /* ViewController.swift */,
+				FA3DBCC31A747377002B71CB /* Supplies.swift */,
+				FA3DBCC51A74745F002B71CB /* Price.swift */,
 				FA3DBCA71A74571D002B71CB /* Main.storyboard */,
 				FA3DBCAA1A74571D002B71CB /* Images.xcassets */,
 				FA3DBCAC1A74571D002B71CB /* LaunchScreen.xib */,
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3DBCA61A74571D002B71CB /* ViewController.swift in Sources */,
+				FA3DBCC61A74745F002B71CB /* Price.swift in Sources */,
+				FA3DBCC41A747377002B71CB /* Supplies.swift in Sources */,
 				FA3DBCA41A74571D002B71CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

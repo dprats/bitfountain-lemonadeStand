@@ -49,16 +49,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="53" y="130" width="203" height="58"/>
+                                    <rect key="frame" x="54" y="130" width="122" height="50"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ice cubes for $1:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuz-uq-LfT">
-                                <rect key="frame" x="38" y="198" width="203" height="58"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="        Ice for $1:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2WG-OS-xSr">
+                                <rect key="frame" x="52" y="153" width="203" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="39" y="164" width="203" height="58"/>
+                                    <rect key="frame" x="53" y="167" width="136" height="44"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do your customers prefer more ice or lemons today?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpc-CG-iXt">
@@ -107,6 +107,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="197" y="144" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="purchaseLemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XeJ-Z7-5Mj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ll-u7-9Mw">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -117,6 +120,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="196" y="178" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="purchaseIceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWO-1D-658"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKL-pq-mQY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -127,6 +133,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="197" y="273" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="mixLemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCC-fk-1MW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10I-eS-MQc">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -137,6 +146,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="196" y="319" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="mixIceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZ6-Nd-A4c"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lemons:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRC-PU-jdX">
                                 <rect key="frame" x="52" y="153" width="203" height="58"/>
@@ -165,6 +177,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="284" y="144" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="unpurchaseLemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Nx-Z4-ihD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ort-gb-QJx">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -175,6 +190,10 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="284" y="178" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="unpurchaseIceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Li-sj-dna"/>
+                                    <action selector="unurchaseIceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qv9-0i-Gt3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKT-9W-OCE">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -185,6 +204,22 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="279" y="273" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="unmixLemonButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVT-9Y-2jA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6V-Ea-EnE">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="-">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="284" y="319" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="unmixIceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1l-gn-jPz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb8-0I-4ZV">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -196,6 +231,9 @@
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="79" y="473" width="163" height="75"/>
                                 </variation>
+                                <connections>
+                                    <action selector="startDayButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LV2-4w-qsi"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 Lemon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpb-Fy-3eP">
                                 <rect key="frame" x="52" y="153" width="203" height="58"/>
@@ -215,21 +253,48 @@
                                     <rect key="frame" x="181" y="44" width="203" height="58"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6V-Ea-EnE">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="-">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuz-uq-LfT">
+                                <rect key="frame" x="38" y="198" width="203" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="284" y="319" width="30" height="30"/>
+                                    <rect key="frame" x="251" y="144" width="20" height="32"/>
                                 </variation>
-                            </button>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GfV-2Z-Obr">
+                                <rect key="frame" x="38" y="198" width="203" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="251" y="177" width="20" height="32"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAn-F7-0yF">
+                                <rect key="frame" x="38" y="198" width="203" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="251" y="271" width="20" height="32"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmK-em-WgN">
+                                <rect key="frame" x="38" y="198" width="203" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="251" y="318" width="20" height="32"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="1xM-wA-5qe"/>
+                                <exclude reference="2WG-OS-xSr"/>
                                 <exclude reference="YDM-pf-cHE"/>
                                 <exclude reference="4Ll-u7-9Mw"/>
                                 <exclude reference="OKL-pq-mQY"/>
@@ -239,15 +304,19 @@
                                 <exclude reference="7Ip-aw-dA3"/>
                                 <exclude reference="ort-gb-QJx"/>
                                 <exclude reference="HKT-9W-OCE"/>
+                                <exclude reference="h6V-Ea-EnE"/>
                                 <exclude reference="xb8-0I-4ZV"/>
                                 <exclude reference="Tpb-Fy-3eP"/>
                                 <exclude reference="6qs-Bh-hSy"/>
-                                <exclude reference="h6V-Ea-EnE"/>
+                                <exclude reference="GfV-2Z-Obr"/>
+                                <exclude reference="ZAn-F7-0yF"/>
+                                <exclude reference="WmK-em-WgN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="1xM-wA-5qe"/>
+                                <include reference="2WG-OS-xSr"/>
                                 <include reference="YDM-pf-cHE"/>
                                 <include reference="4Ll-u7-9Mw"/>
                                 <include reference="OKL-pq-mQY"/>
@@ -257,17 +326,30 @@
                                 <include reference="7Ip-aw-dA3"/>
                                 <include reference="ort-gb-QJx"/>
                                 <include reference="HKT-9W-OCE"/>
+                                <include reference="h6V-Ea-EnE"/>
                                 <include reference="xb8-0I-4ZV"/>
                                 <include reference="Tpb-Fy-3eP"/>
                                 <include reference="6qs-Bh-hSy"/>
-                                <include reference="h6V-Ea-EnE"/>
+                                <include reference="GfV-2Z-Obr"/>
+                                <include reference="ZAn-F7-0yF"/>
+                                <include reference="WmK-em-WgN"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="iceCubeSupplyCount" destination="Tpb-Fy-3eP" id="rgL-mG-Dq0"/>
+                        <outlet property="icePurchaseCount" destination="GfV-2Z-Obr" id="pZ7-l6-HB1"/>
+                        <outlet property="iceSupplyCount" destination="6qs-Bh-hSy" id="Crc-Gh-2XR"/>
+                        <outlet property="lemonMixCount" destination="ZAn-F7-0yF" id="Id2-pg-dA1"/>
+                        <outlet property="lemonPurchaseCount" destination="Kuz-uq-LfT" id="BNk-HF-a1K"/>
+                        <outlet property="lemonSupplyCount" destination="Tpb-Fy-3eP" id="OJA-sT-YMi"/>
+                        <outlet property="moneySupplyCount" destination="1xM-wA-5qe" id="ZTE-zw-zYG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="312" y="258"/>
         </scene>
     </scenes>
 </document>
